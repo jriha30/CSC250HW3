@@ -4,6 +4,11 @@ public class Driver
 {
 	public static void main(String[] args)
 	{
+		decToBin();
+	}
+	
+	static String decToBin()
+	{
 		Scanner myObj = new Scanner(System.in);
 		System.out.print("Please enter a decimal number: ");
 		String decString = myObj.nextLine();
@@ -16,5 +21,6 @@ public class Driver
 			binString = remainder + binString;
 		}
 		System.out.println("The decimal number " + decString + " is " + binString + " in binary.");
+		return binString;
 	}
 }
